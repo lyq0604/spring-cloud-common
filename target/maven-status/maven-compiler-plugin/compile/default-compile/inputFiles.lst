@@ -1,5 +1,7 @@
+/opt/MyProjects/demo/spring-cloud-common/src/main/java/com/blade/common/base/BaseMapper.java
 /opt/MyProjects/demo/spring-cloud-common/src/main/java/com/blade/common/response/BaseResult.java
 /opt/MyProjects/demo/spring-cloud-common/src/main/java/com/blade/common/config/RedisConfig.java
+/opt/MyProjects/demo/spring-cloud-common/src/main/java/com/blade/common/utils/StringUtils.java
 /opt/MyProjects/demo/spring-cloud-common/src/main/java/com/blade/common/domain/UserInfo.java
 /opt/MyProjects/demo/spring-cloud-common/src/main/java/com/blade/common/base/BaseController.java
 /opt/MyProjects/demo/spring-cloud-common/src/main/java/com/blade/common/utils/JWTUtil.java

@@ -1,5 +1,6 @@
 com/blade/common/base/BaseService.class
 com/blade/common/constant/CommonConstant.class
+com/blade/common/base/BaseMapper.class
 com/blade/common/utils/JWTUtil.class
 com/blade/common/domain/JWT.class
 com/blade/common/SpringCloudCommonApplication.class
@@ -7,6 +8,7 @@ com/blade/common/config/RedisConfig.class
 com/blade/common/response/BaseResult.class
 com/blade/common/base/BaseController.class
 com/blade/common/utils/TreeUtil.class
+com/blade/common/utils/StringUtils.class
 com/blade/common/utils/TableData.class
 com/blade/common/vo/TreeNode.class
 com/blade/common/utils/RedisUtil.class

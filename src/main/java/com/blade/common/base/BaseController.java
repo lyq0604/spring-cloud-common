@@ -17,7 +17,7 @@ public class BaseController<S extends BaseService, T> {
     @PostMapping("/add")
     public BaseResult add(@RequestBody T t){
         service.insert(t);
-        return new BaseResult().success();
+        return new BaseResult().success(t);
     }
 
     /**
@@ -39,7 +39,7 @@ public class BaseController<S extends BaseService, T> {
     @PutMapping("/update")
     public BaseResult update(@RequestBody T t){
         service.update(t);
-        return new BaseResult().success();
+        return new BaseResult().success(t);
     }
 
     /**

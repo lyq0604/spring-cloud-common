@@ -4,11 +4,10 @@ import com.blade.common.utils.TableData;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
-import tk.mybatis.mapper.common.Mapper;
 
 import java.util.List;
 
-public class BaseService<M extends Mapper<T>, T> {
+public class BaseService<M extends BaseMapper<T>, T> {
 
     @Autowired
     protected M mapper;
@@ -62,7 +61,7 @@ public class BaseService<M extends Mapper<T>, T> {
      * @return
      */
     public List<T> selectListByEntity(T t) {
-        List<T> list = mapper.select(t);
+        List<T> list = mapper.selectListByEntity(t);
         return list;
     }
 
@@ -75,7 +74,7 @@ public class BaseService<M extends Mapper<T>, T> {
      */
     public TableData selectPage(Integer pageNum, Integer pageSize, T t) {
         PageHelper.startPage(pageNum == null ? 1 : pageNum, pageSize == null ? 10 : pageSize);
-        List<T> list = mapper.select(t);
+        List<T> list = mapper.selectListByEntity(t);
         PageInfo<T> pageInfo = new PageInfo<>(list);
         return  new TableData(pageInfo.getList(),pageInfo.getTotal());
     }
